@@ -1,4 +1,4 @@
-# CRUD projects
+# CRUD Apps
 
 This repo centralizes personal CRUD projects for portfolio purposes and to record my progress.
 

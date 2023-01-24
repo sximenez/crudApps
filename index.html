@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>crudProjects</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .app-height {
+      height: calc(100vh - 168px);
+
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .app::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .app {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    /* Dark mode styles */
+    .dark-mode {
+      background-color: #343541;
+    }
+    .dark-mode h1,
+    .dark-mode h2,
+    .dark-mode h3,
+    .dark-mode h5,
+    .dark-mode p {
+      color: white;
+    }
+
+    .dark-mode button {
+      color: white;
+      background-color: #444654;
+      border: 1px solid #444654;
+    }
+
+    .dark-mode .card {
+      background-color: #444654;
+      border: 1px solid #444654;
+    }
+    
+    .dark-mode .card p {
+      color: #79BEEE;
+    }
+  </style>
+
+</head>
+
+<body class="h-screen flex flex-col max-w-[964px] mx-auto px-5 md:px-10 py-20 text-[#0f172a] font-mono">
+
+  <header class="flex-col">
+
+    <nav class="flex flex-col gap-y-8 md:flex-row md:items-center items-start md:justify-between mb-8">
+
+      <!-- Title -->
+      <h1 class="text-4xl font-extrabold white">CRUD Apps</h1>
+      <button class="dark-mode-toggle px-4 py-2 bg-white border border-gray-200 rounded-lg">Dark mode</button>
+
+    </nav>
+
+    <!-- Subtitle -->
+
+    <div class="mb-12">
+
+      <h2 class="text-[#334155]">This is a collection of personal CRUD projects.</h2>
+      <p class="text-[#334155]">Thank you for browsing.</p>
+
+    </div>
+
+  </header>
+
+  <main class="app app-height overflow-y-scroll">
+
+    <div class="grid md:grid-cols-2 gap-6 justify-between" id="container"></div>
+
+  </main>
+
+  <!-- Data -->
+  <script src="functions.js" type="module"></script>
+
+</body>
+
+</html>

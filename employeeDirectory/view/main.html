@@ -1,0 +1,43 @@
+<!-- Filters -->
+<div class="flex gap-3 md:gap-x-3 flex-col md:flex-row flex-wrap items-start md:items-center justify-start py-6">
+
+  <!-- Employee name filter -->
+  <div
+    class="block flex items-center justify-center hover:border-gray-500 transition-all space-x-8 mt-0 text-sm font-medium focus:outline-none">
+
+    <input type="text" name="name_filter" id="name_filter"
+      class="border py-2 px-4 rounded-full placeholder:italic focus:outline-none" placeholder="Filter by employee name">
+
+  </div>
+
+  <!-- Department filter -->
+  <div
+    class="block flex items-center justify-center hover:border-gray-500 transition-all space-x-8 mt-0 text-sm font-medium focus:outline-none">
+
+    <select type="text" name="department_filter" id="department_filter"
+      class="border py-2 px-4 rounded-full focus:outline-none italic text-gray-400">
+      <option class="not-italic" selected="" disabled value="">Filter by department</option>
+      <option class="hidden text-black not-italic" value="reset">Reset</option>
+      <option class="text-black not-italic" value="ACC">Accounts</option>
+      <option class="text-black not-italic" value="MGNT">Admin</option>
+      <option class="text-black not-italic" value="HR">Human resources</option>
+      <option class="text-black not-italic" value="CYBER">Server security</option>
+      <option class="text-black not-italic" value="BI">Business development</option>
+      <option class="text-black not-italic" value="IT">Programming</option>
+      <option class="text-black not-italic" value="MAR">Marketing</option>
+      <option class="text-black not-italic" value="PUR">Purchasing</option>
+      <option class="text-black not-italic" value="COM">Communication</option>
+    </select>
+
+  </div>
+
+  <div
+    class="block flex items-center justify-center hover:border-gray-500 transition-all space-x-8 mt-0 text-sm font-medium focus:outline-none">
+
+    <button id="reset_btn" class="border py-2 px-4 rounded-full focus:outline-none italic text-gray-400">Reset</button>
+
+  </div>
+
+</div>
+
+<div id="card-container" class="grid gap-8 mb-6 lg:mb-0 md:grid-cols-3 lg:grid-cols-4"></div>

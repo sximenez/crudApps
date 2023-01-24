@@ -1,0 +1,20 @@
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Front controller -->
+<script type="module">
+
+  // Set index.html to #
+  window.location.replace("/#/");
+
+  // Load controllers
+  import { layout, header, main } from "./controllers.js";
+  layout();
+  header();
+  main();
+
+  // Load routes
+  import { router } from "./routes.js";
+  router();
+
+</script>

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Steven Jiménez",
+    "job_title": "Javascript learner",
+    "location": "Remote",
+    "department": "IT",
+    "join_date": "2023-01-13",
+    "email": "helloworld@gmail.com",
+    "phone_number": "123456789",
+    "description" : "As a web developer, I practice creating applications like this databaseless CRUD app.",
+    "photo" : "https://avatars.githubusercontent.com/u/70152164?v=4"
+  }
+]

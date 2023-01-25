@@ -170,41 +170,41 @@ export function readCard() {
           <!-- Details -->
           <div class="w-full flex justify-between mb-6 rounded-t">
             <div class="w-full text-gray-900 md:text-lg dark:text-white">
-              <h3 class="text-2xl font-bold my-6 md:mt-0">${data.name}</h3>
+              <h3 class="text-2xl font-bold my-6 md:mt-0 text-center md:text-left">${data.name}</h3>
 
               <div class="border rounded-lg p-6 pb-0 mb-6">
                 <div>
                   <p class="text-sm my-2 font-semibold leading-none text-gray-500 dark:text-white">Job Title</p>
-                  <p class="mb-2 font-normal sm:mb-8 dark:text-gray-400">${data.job_title}</p>
+                  <p class="mb-2 font-normal mb-8 dark:text-gray-400">${data.job_title}</p>
                 </div>
 
                 <div>
                   <p class="text-sm my-2 font-semibold leading-none text-gray-500 dark:text-white">Department</p>
-                  <p class="mb-2 font-normal sm:mb-8 dark:text-gray-400">${data.department}</p>
+                  <p class="mb-2 font-normal mb-8 dark:text-gray-400">${data.department}</p>
                 </div>
 
                 <div>
                   <p class="text-sm my-2 font-semibold leading-none text-gray-500 dark:text-white">Location</p>
-                  <p class="mb-2 font-normal sm:mb-8 dark:text-gray-400">${data.location}</p>
+                  <p class="mb-2 font-normal mb-8 dark:text-gray-400">${data.location}</p>
                 </div>
               </div>
 
               <div class="border rounded-lg p-6 pb-0 mb-6">
                 <div>
                   <p class="text-sm my-2 font-semibold leading-none text-gray-500 dark:text-white">Phone</p>
-                  <p class="mb-2 font-normal sm:mb-8 dark:text-gray-400">${data.phone_number}</p>
+                  <p class="mb-2 font-normal mb-8 dark:text-gray-400">${data.phone_number}</p>
                 </div>
 
                 <div>
                   <p class="text-sm my-2 font-semibold leading-none text-gray-500 dark:text-white">Email</p>
-                  <p class="mb-2 font-normal sm:mb-8 dark:text-gray-400">${data.email}</p>
+                  <p class="mb-2 font-normal mb-8 dark:text-gray-400">${data.email}</p>
                 </div>
               </div>
 
               <div class="border rounded-lg p-6 pb-0 mb-6">
                 <div>
                   <p class="text-sm my-2 font-semibold leading-none text-gray-500 dark:text-white">About</p>
-                  <p class="mb-2 font-normal sm:mb-8 dark:text-gray-400">${data.description}</p>
+                  <p class="mb-2 font-normal mb-8 dark:text-gray-400">${data.description}</p>
                 </div>
               </div>
 

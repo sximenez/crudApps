@@ -14,7 +14,7 @@ export function updateCard() {
   card.innerHTML = `
 
   <!-- Content -->
-    <div class="bg-white rounded-lg border p-4 md:p-12 md:mt-[24px]">
+    <div class="bg-white rounded-lg border p-4 md:p-12 mt-[24px]">
 
       <!-- Header -->
       <div class="flex flex-col justify-between items-start pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">

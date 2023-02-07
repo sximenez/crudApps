@@ -15,7 +15,7 @@ function cardProcessing(filteredCards) {
     let index = employee.index;
 
     const card = document.createElement("div");
-    card.classList.add("border", "items-center", "bg-white", "rounded-lg", "flex-col", "cursor-pointer", "hover:border-gray-500", "transition-all");
+    card.classList.add("dark-card", "border", "items-center", "bg-white", "rounded-lg", "flex-col", "cursor-pointer", "hover:border-gray-500", "transition-all");
 
     card.innerHTML = `
       <div class="flex justify-center p-8 h-72 w-72 md:h-52 md:w-52 mx-auto">
@@ -23,9 +23,9 @@ function cardProcessing(filteredCards) {
       </div>
           
       <div class="p-5 pt-0 text-center">
-        <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white truncate ...">${name}</h3>
-        <p class="mb-4 font-semibold text-sm text-gray-500 dark:text-gray-400 truncate ...">${department} | ${job_title}</p>
-        <p class="mt-3 mb-4 font-semibold text-sm text-gray-500 dark:text-gray-400">Joined: ${join_date}</p>
+        <h3 class="text-xl font-bold tracking-tight text-gray-900 truncate ...">${name}</h3>
+        <p class="mb-4 font-semibold text-sm text-gray-500 truncate ...">${department} | ${job_title}</p>
+        <p class="mt-3 mb-4 font-semibold text-sm text-gray-500">Joined: ${join_date}</p>
       </div>
       `;
 
@@ -121,10 +121,13 @@ function filterCardsByName() {
   console.log(filteredCards);
 
   const container = document.querySelector("#card-container");
+  const searchResult = document.createElement("p");
+  searchResult.innerHTML = `No employees found.`;
 
   if (filteredCards.length === 0) {
 
-    container.innerHTML = `No employees found.`;
+    container.innerHTML = "";
+    container.appendChild(searchResult);
 
   } else {
 
@@ -143,10 +146,13 @@ function filterCardsByDepartment() {
   console.log(filteredCards);
 
   const container = document.querySelector("#card-container");
+  const searchResult = document.createElement("p");
+  searchResult.innerHTML = `No employees found.`;
 
   if (filteredCards.length === 0) {
 
-    container.innerHTML = `No employees found.`;
+    container.innerHTML = "";
+    container.appendChild(searchResult);
 
   } else {
 

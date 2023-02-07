@@ -1,0 +1,96 @@
+.dark-mode {
+  background-color: #343541;
+}
+.dark-mode header {
+  border-color: #444654;
+}
+.dark-mode header .dark-home-link {
+  color: white;
+  background-color: transparent;
+  border: transparent;
+}
+.dark-mode header nav {
+  background-color: #343541;
+}
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p {
+  color: white;
+}
+.dark-mode button,
+.dark-mode a,
+.dark-mode input,
+.dark-mode select {
+  color: white;
+  background-color: #444654;
+  border: 1px solid #444654;
+}
+.dark-mode .dark-filters input::-moz-placeholder {
+  color: white;
+}
+.dark-mode .dark-filters input::placeholder,
+.dark-mode .dark-filters select,
+.dark-mode .dark-filters button {
+  color: white;
+}
+.dark-mode .dark-card {
+  background-color: #444654;
+  border: 1px solid #444654;
+}
+.dark-mode .dark-card p {
+  color: #79BEEE;
+}
+.dark-mode .dark-form-box {
+  background-color: #444654;
+  border: 1px solid transparent;
+}
+.dark-mode .dark-form-box .dark-form-title {
+  border-color: #9599A0;
+}
+.dark-mode .dark-form-box a {
+  border: none;
+}
+.dark-mode .dark-form-box input,
+.dark-mode .dark-form-box select,
+.dark-mode .dark-form-box textarea {
+  color: white;
+  background-color: #343541;
+  border: 1px solid transparent;
+}
+.dark-mode .dark-form-box label {
+  color: white;
+}
+.dark-mode .dark-form-box button {
+  background-color: #2563EB;
+  border: none;
+}
+.dark-mode .dark-form-box button:hover {
+  background-color: rgb(29, 78, 216);
+}
+.dark-mode .dark-sublink {
+  background-color: transparent;
+  border: none;
+}
+.dark-mode .dark-read-box {
+  background-color: #444654;
+  border-color: transparent;
+}
+.dark-mode .dark-read-box .dark-image {
+  border-color: #444654;
+}
+.dark-mode .dark-read-box .dark-link {
+  background-color: #343541;
+}
+.dark-mode .dark-read-box .dark-link:hover {
+  background-color: rgb(220, 38, 38);
+}
+.dark-mode .dark-read-box .dark-link-blue:hover {
+  background-color: rgb(29, 78, 216);
+}
+.dark-mode .dark-read-box .dark-read-title {
+  color: #9599A0;
+}/*# sourceMappingURL=style.css.map */

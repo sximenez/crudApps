@@ -14,15 +14,15 @@ export function updateCard() {
   card.innerHTML = `
 
   <!-- Content -->
-    <div class="bg-white rounded-lg border p-4 md:p-12 mt-[24px]">
+    <div class="rounded-lg border p-4 md:p-12 mt-[24px] dark-form-box">
 
       <!-- Header -->
-      <div class="flex flex-col justify-between items-start pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
+      <div class="flex flex-col justify-between items-start pb-4 mb-4 rounded-t border-b sm:mb-5 dark-form-title">
         <a href="#/read" class="mb-4 text-sm font-medium text-gray-900 hover:underline">
           ← Back  
         </a> 
       
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+        <h3 class="text-lg font-semibold text-gray-900">
           Update employee details
         </h3>
       </div>
@@ -31,17 +31,17 @@ export function updateCard() {
       <form action="#" id="update-employee">
         <div class="grid gap-4 mb-4 sm:grid-cols-2">
           <div>
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+            <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Name</label>
             <input type="text" name="name" id="name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5"
               placeholder="" required="" value="${data.name}">
           </div>
           
           <div>
             <label for="department"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Department</label>
+              class="block mb-2 text-sm font-medium text-gray-900">Department</label>
             <select type="text" name="department" id="department"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5"
               placeholder="" required="" value="">
               <option value="">Select an option</option>
               <option ${data.department === "ACC" ? "selected" : ""} value="ACC">Accounts</option>
@@ -58,18 +58,18 @@ export function updateCard() {
           </div>
           
           <div>
-            <label for="job_title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Job
+            <label for="job_title" class="block mb-2 text-sm font-medium text-gray-900">Job
               title</label>
             <input type="text" name="job_title" id="job_title"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5"
               placeholder="" required="" value="${data.job_title}">
           </div>
 
           <div>
             <label for="location"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Location</label>
+              class="block mb-2 text-sm font-medium text-gray-900">Location</label>
             <select type="text" name="location" id="location"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5"
               placeholder="" required="">
               <option value="">Select an option</option>
               <option value="Remote" ${data.location === "Remote" ? "selected" : ""}>Remote</option>
@@ -78,31 +78,31 @@ export function updateCard() {
           </div>
 
           <div>
-            <label for="join_date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Join date</label>
+            <label for="join_date" class="block mb-2 text-sm font-medium text-gray-900">Join date</label>
             <input type="date" name="join_date" id="join_date"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5"
               placeholder="dd/mm/yyyy" required="" value="${data.join_date}">
           </div>
           
           <div>
-            <label for="phone_number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
+            <label for="phone_number" class="block mb-2 text-sm font-medium text-gray-900">Phone number</label>
             <input type="number" name="phone_number" id="phone_number"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5"
               placeholder="123-4567-890" required="" value="${data.phone_number}">
           </div>
           
           <div>
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
             <input type="email" name="email" id="email"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5"
               placeholder="@helloworld.com" required="" value="${data.email}">
           </div>
           
           <div>
             <label for="photo"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Photo</label>
+              class="block mb-2 text-sm font-medium text-gray-900">Photo</label>
             <select type="text" name="photo" id="photo"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5"
               placeholder="" required="" >
               <option value="">Select a photo</option>
               <option ${data.photo === "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600" ? "selected" : ""} value="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600">Man 1</option>
@@ -114,15 +114,15 @@ export function updateCard() {
 
           <div class="sm:col-span-2">
             <label for="description"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Short description</label>
+              class="block mb-2 text-sm font-medium text-gray-900">Short description</label>
             <textarea id="description" rows="4"
-              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
               placeholder="" value="">${data.description}</textarea>
           </div>
 
         </div>
         <button type="submit"
-          class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center">
           Update employee details
         </button>
       </form>

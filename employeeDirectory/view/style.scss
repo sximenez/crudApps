@@ -1,0 +1,123 @@
+.dark-mode {
+
+  background-color: #343541;
+
+  header {
+    border-color: #444654;
+
+    .dark-home-link {
+      color: white;
+      background-color: transparent;
+      border: transparent;
+    }
+
+    nav {
+      background-color: #343541;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: white;
+  }
+
+  button,
+  a,
+  input,
+  select {
+    color: white;
+    background-color: #444654;
+    border: 1px solid #444654;
+  }
+
+  .dark-filters {
+
+    input::placeholder,
+    select,
+    button {
+      color: white;
+    }
+
+  }
+
+  .dark-card {
+    background-color: #444654;
+    border: 1px solid #444654;
+
+    p {
+      color: #79BEEE;
+    }
+
+  }
+
+  .dark-form-box {
+    background-color: #444654;
+    border: 1px solid transparent;
+
+    .dark-form-title {
+      border-color: #9599A0;
+    }
+
+    a {
+      border: none;
+    }
+
+    input,
+    select,
+    textarea {
+      color: white;
+      background-color: #343541;
+      border: 1px solid transparent;
+    }
+    
+    label {
+      color: white;
+    }
+
+    button {
+      background-color: #2563EB;
+      border: none;
+    }
+    
+    button:hover {
+      background-color: rgb(29 78 216);
+    }
+  }
+
+  .dark-sublink {
+    background-color: transparent;
+    border: none;
+  }
+
+  .dark-read-box {
+    background-color: #444654;
+    border-color: transparent;
+
+    .dark-image {
+      border-color: #444654;
+    }
+
+    .dark-link {
+      background-color: #343541;
+    }
+
+    .dark-link:hover {
+      background-color: rgb(220 38 38);
+    }
+    
+    .dark-link-blue:hover {
+      background-color: rgb(29 78 216);
+    }
+
+    .dark-read-title {
+      color: #9599A0;
+    }
+
+  }
+
+}

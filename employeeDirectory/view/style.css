@@ -33,8 +33,10 @@
   color: white;
 }
 .dark-mode .dark-filters input::placeholder,
-.dark-mode .dark-filters select,
 .dark-mode .dark-filters button {
+  color: white;
+}
+.dark-mode .dark-filters select option {
   color: white;
 }
 .dark-mode .dark-card {

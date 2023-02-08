@@ -3,19 +3,19 @@
 
   <!-- Employee name filter -->
   <div
-    class="block flex items-center justify-center hover:border-gray-500 transition-all space-x-8 mt-0 text-sm font-medium focus:outline-none">
+    class="block flex items-center justify-center space-x-8 mt-0 text-sm font-medium focus:outline-none">
 
     <input type="text" name="name_filter" id="name_filter"
-      class="border py-2 px-4 rounded-full placeholder:italic focus:outline-none" placeholder="Filter by employee name">
+      class="border py-2 px-4 rounded-full placeholder:italic focus:outline-none hover:border-gray-500 hover:transition-all" placeholder="Filter by employee name">
 
   </div>
 
   <!-- Department filter -->
   <div
-    class="block flex items-center justify-center hover:border-gray-500 transition-all space-x-8 mt-0 text-sm font-medium focus:outline-none">
+    class="block flex items-center justify-center space-x-8 mt-0 text-sm font-medium focus:outline-none">
 
     <select type="text" name="department_filter" id="department_filter"
-      class="border py-2 px-4 rounded-full focus:outline-none italic text-gray-400">
+      class="border py-2 px-4 rounded-full focus:outline-none italic text-gray-400 hover:border-gray-500 hover:transition-all cursor-pointer">
       <option class="not-italic" selected="" disabled value="">Filter by department</option>
       <option class="hidden text-black not-italic" value="reset">Reset</option>
       <option class="text-black not-italic" value="ACC">Accounts</option>
@@ -32,9 +32,9 @@
   </div>
 
   <div
-    class="block flex items-center justify-center hover:border-gray-500 transition-all space-x-8 mt-0 text-sm font-medium focus:outline-none">
+    class="block flex items-center justify-center space-x-8 mt-0 text-sm font-medium focus:outline-none">
 
-    <button id="reset_btn" class="border py-2 px-4 rounded-full focus:outline-none italic text-gray-400">Reset</button>
+    <button id="reset_btn" class="border py-2 px-4 rounded-full focus:outline-none italic text-gray-400 hover:border-gray-500 hover:transition-all">Reset</button>
 
   </div>
 

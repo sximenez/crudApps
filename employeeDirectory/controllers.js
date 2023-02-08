@@ -3,6 +3,7 @@ import { createCard } from "./model/create.js";
 import { updateCard } from "./model/update.js";
 import { deleteCard } from "./model/delete.js";
 import { searchCard } from "./model/search.js";
+import { darkMode } from "./model/dark.js";
 
 // Load layout
 export function layout() {
@@ -28,6 +29,7 @@ export function header() {
 
       const headerContainer = document.querySelector("#header-container");
       headerContainer.innerHTML = data;
+      darkMode();
 
     });
 

@@ -1,5 +1,3 @@
-import { darkMode } from "./dark.js";
-
 function cardProcessing(data) {
 
   const container = document.querySelector("#card-container");
@@ -12,7 +10,6 @@ function cardProcessing(data) {
     let job_title = employee.job_title;
     let join_date = employee.join_date;
     let photo = employee.photo;
-    let index = employee.index;
 
     const card = document.createElement("div");
     card.classList.add("dark-card", "border", "items-center", "rounded-lg", "flex-col", "cursor-pointer", "hover:border-gray-500", "hover:transition-all");
@@ -44,56 +41,31 @@ function cardProcessing(data) {
   };
 };
 
-let dataFromJson = null;
-
 export function readData() {
 
-  if (dataFromJson === null) {
+  fetch("./model/data.json")
+    .then(response => response.json())
+    .then(jsonData => {
 
-    fetch("./model/data.json")
-      .then(response => response.json())
-      .then(jsonData => {
+      let data = jsonData;
+      let sessionData = JSON.parse(sessionStorage.getItem("data"));
+      if (sessionData) data = data.concat(sessionData);
+      console.log(data, sessionData);
 
-        dataFromJson = jsonData;
-        let data = dataFromJson;
-        let sessionData = JSON.parse(sessionStorage.getItem("data"));
-        if (sessionData) data = data.concat(sessionData);
-        console.log(dataFromJson, sessionData, data);
+      let index = 0;
+      for (let employee of data) {
 
-        let index = 0;
-        for (let employee of data) {
+        employee.index = index;
+        index++;
 
-          employee.index = index;
-          index++;
+      };
 
-        };
+      data.sort((b, a) => new Date(a.join_date) - new Date(b.join_date));
 
-        data.sort((b, a) => new Date(a.join_date) - new Date(b.join_date));
+      cardProcessing(data);
 
-        cardProcessing(data);
-        darkMode();
+    });
 
-      });
-
-  } else {
-
-    let data = dataFromJson;
-    let sessionData = JSON.parse(sessionStorage.getItem("data"));
-    if (sessionData) data = data.concat(sessionData);
-    console.log(data);
-
-    let index = 0;
-    for (let employee of data) {
-
-      employee.index = index;
-      index++;
-    };
-
-    data.sort((b, a) => new Date(a.join_date) - new Date(b.join_date));
-
-    cardProcessing(data);
-
-  };
 };
 
 export function readCard() {

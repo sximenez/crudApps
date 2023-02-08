@@ -1,7 +1,8 @@
 export function darkMode() {
 
-  let toggle = document.querySelector(".dark-mode-toggle");
+  let toggle = document.querySelector("#dark-mode-toggle");
   let body = document.querySelector("body");
+  console.log(toggle);
 
   toggle.addEventListener("click", () => {
 

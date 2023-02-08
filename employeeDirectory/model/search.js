@@ -12,10 +12,9 @@ function cardProcessing(filteredCards) {
     let job_title = employee.job_title;
     let join_date = employee.join_date;
     let photo = employee.photo;
-    let index = employee.index;
 
     const card = document.createElement("div");
-    card.classList.add("dark-card", "border", "items-center", "bg-white", "rounded-lg", "flex-col", "cursor-pointer", "hover:border-gray-500", "transition-all");
+    card.classList.add("dark-card", "border", "items-center", "bg-white", "rounded-lg", "flex-col", "cursor-pointer", "hover:border-gray-500", "hover:transition-all");
 
     card.innerHTML = `
       <div class="flex justify-center p-8 h-72 w-72 md:h-52 md:w-52 mx-auto">

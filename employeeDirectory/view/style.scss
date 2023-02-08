@@ -38,8 +38,11 @@
   .dark-filters {
 
     input::placeholder,
-    select,
     button {
+      color: white;
+    }
+
+    select option {
       color: white;
     }
 
@@ -74,7 +77,7 @@
       background-color: #343541;
       border: 1px solid transparent;
     }
-    
+
     label {
       color: white;
     }
@@ -83,7 +86,7 @@
       background-color: #2563EB;
       border: none;
     }
-    
+
     button:hover {
       background-color: rgb(29 78 216);
     }
@@ -109,7 +112,7 @@
     .dark-link:hover {
       background-color: rgb(220 38 38);
     }
-    
+
     .dark-link-blue:hover {
       background-color: rgb(29 78 216);
     }

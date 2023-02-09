@@ -1,0 +1,72 @@
+<!-- Filters -->
+<div class="flex gap-3 md:gap-x-3 flex-col md:flex-row flex-wrap items-start md:items-center justify-start py-6">
+
+  <!-- Employee name filter -->
+  <div
+    class="hidden block flex items-center justify-center hover:border-gray-500 transition-all space-x-8 mt-0 text-sm font-medium focus:outline-none">
+
+    <input type="text" name="name_filter" id="name_filter"
+      class="border py-2 px-4 rounded-full placeholder:italic focus:outline-none" placeholder="Filter by employee name">
+
+  </div>
+
+  <!-- Category filter -->
+  <div class="block flex items-center justify-center space-x-8 mt-0 text-sm font-medium focus:outline-none">
+
+    <select type="text" name="priority_filter" id="priority_filter"
+      class="border py-2 px-4 rounded-full focus:outline-none italic text-gray-400 hover:border-gray-500 transition-all cursor-pointer">
+      <option class="not-italic" selected="" disabled value="reset">Filter by priority</option>
+      <option class="text-black not-italic" value="Urgent">Urgent</option>
+      <option class="text-black not-italic" value="Not urgent">Not urgent</option>
+    </select>
+
+  </div>
+
+  <!-- Category filter -->
+  <div class="block flex items-center justify-center space-x-8 mt-0 text-sm font-medium focus:outline-none">
+
+    <select type="text" name="category_filter" id="category_filter"
+      class="border py-2 px-4 rounded-full focus:outline-none italic text-gray-400 hover:border-gray-500 transition-all cursor-pointer">
+      <option class="not-italic" selected="" disabled value="reset">Filter by category</option>
+      <option class="text-black not-italic" value="Personal">Personal</option>
+      <option class="text-black not-italic" value="Work">Work</option>
+    </select>
+
+  </div>
+
+  <div class="block flex items-center justify-center space-x-8 mt-0 text-sm font-medium focus:outline-none">
+
+    <button id="reset_btn"
+      class="border py-2 px-4 rounded-full focus:outline-none italic text-gray-400 hover:border-gray-500 transition-all">Reset</button>
+
+  </div>
+
+</div>
+
+<div>
+
+  <table class="hidden md:grid md:grid-cols-1">
+    <tr class="grid grid-cols-1 md:grid-rows-1 md:grid-cols-6 gap-2 p-5 pt-0 text-gray-900 text-xs">
+
+      <td class="flex items-center justify-start md:justify-center font-semibold tracking-tight">Actions</td>
+
+      <td class="flex items-center justify-start md:justify-center font-semibold tracking-tight">Task</td>
+
+      <td class="flex items-center justify-start md:justify-center font-semibold">Deadline</td>
+
+      <td class="w-fit md:m-auto px-4 py-1 font-semibold rounded-full">Category</td>
+
+      <td class="w-fit md:m-auto px-4 py-1 font-semibold rounded-full">Priority</td>
+
+      <td class="flex items-center justify-start md:justify-center font-semibold">Detail</td>
+
+    </tr>
+  </table>
+
+</div>
+
+<div id="task-container" class="mb-6 lg:mb-0">
+
+  <table id="task-table" class="grid md:grid-cols-1 border"></table>
+
+</div>

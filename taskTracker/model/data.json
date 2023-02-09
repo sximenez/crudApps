@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Add a new task!",
+    "date" : "2023-02-06",
+    "category" : "Personal",
+    "priority" : "Not urgent",
+    "detail" : "You cannot edit the details of this task :)",
+    "done" : false
+  }
+]

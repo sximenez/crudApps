@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="./view/style.css">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Front controller -->
+<script type="module">
+
+  // Add hash to index.html
+  // window.location.replace("index.html#/");
+
+  // Load controllers
+  import { layout, header, main } from "./controllers.js";
+  layout();
+  header();
+  main();
+
+  // Load routes
+  import { router } from "./routes.js";
+  router();
+
+</script>
